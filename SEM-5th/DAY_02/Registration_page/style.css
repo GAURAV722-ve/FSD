@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    padding:20px;
+}
+
+.container{
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.25);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    margin-top:15px;
+    font-weight:bold;
+    color:#444;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:#f3f3f3;
+    font-size:16px;
+    transition:0.3s;
+}
+
+input:focus{
+    background:white;
+    box-shadow:0 0 10px rgba(0,140,255,0.4);
+    border:2px solid royalblue;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:25px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    background:linear-gradient(to right,#4facfe,#00c6ff);
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+#students{
+    margin-top:25px;
+}
+
+.student-card{
+    background:#f8f9ff;
+    padding:18px;
+    margin-bottom:15px;
+    border-left:6px solid royalblue;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    line-height:1.8;
+}
+
+.student-card h3{
+    color:royalblue;
+    margin-bottom:10px;
+}
+
+.student-card p{
+    color:#444;
+    font-size:15px;
+}
