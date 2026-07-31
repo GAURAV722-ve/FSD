@@ -1,27 +1,32 @@
-d = 32;
+// Var -- Redeclaration --- Reassignment -- Global | function
+// let -- Not Redeclaration --- Reassignment -- Block
+// Const -- Not Redeclaration --- Not Reassignment -- Block
 
-function f() {
-    var a = 81;
-    f2();
 
-    function f2() {
-        console.log(a);
-        let b = 82;
-        f3();
+console.log(a)
+a = 45;
 
-        function f3() {
-            console.log(b);
-            let c = 21;
-            f4();
+var a ;
+a = 66;
 
-            function f4() {
-                console.log(a);
-                console.log(b);
-                console.log(c);
-                console.log(d);
-            }
-        }
-    }
+var a ;
+{
+    console.log(a);
+    var a = 12;
+    a = 65;
+    console.log(a);
+    let b = 66;
+}
+try{
+    console.log(b); // Block scope so we can't access.
+}catch(err){
+    console.log("B is not defined");
 }
 
-f();
+const a = 20;
+try{
+    a = 20;  //We can't perform reassignment in const.
+    console.log(a);
+}catch(err){
+    console.log("A is not defiend")
+}
