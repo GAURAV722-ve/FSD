@@ -1,7 +1,7 @@
 // Var -- Redeclaration --- Reassignment -- Global | function
 // let -- Not Redeclaration --- Reassignment -- Block
 // Const -- Not Redeclaration --- Not Reassignment -- Block
-
+// GRE -- Global execution context.
 
 console.log(a)
 a = 45;
