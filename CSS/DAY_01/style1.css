@@ -1,0 +1,35 @@
+Universal selector
+* {
+    color: hotpink;
+}
+
+/* ID selector */
+#heading {
+    color: blue;
+    text-align: center;
+}
+
+#p1 {
+    color: red;
+    font-size: 20px;
+}
+
+/* Class selector */
+.para {
+    color: green;
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* Element selector */
+
+h2{
+    color: brown;
+    size: 23px;
+}
+
+/* Group selector */
+
+ h1, h2, p {
+            text-align: center;
+        }
