@@ -11,6 +11,7 @@ const App = () => {
     document.title = `count:${count}`;
     console.log("Component render.")
   },[count])
+  
   return (
     <div style={{ textAlign: "center", backgroundColor:"Hotpink" }}>
       <h1>Counter</h1>
